@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    background: lightslategray;
+}
+
+.container {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    
+}
+
+.content {
+    grid-column: 2;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.logo-img {
+    min-width: 100%;
+}
+
+
