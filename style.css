@@ -29,8 +29,34 @@ body {
     
 }
 
+
 .logo-img {
     min-width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
+.text {
+    position: relative;
+    
+    /* margin-top: calc(-2rem - 5.5%); */
+    background: red;
+}
 
+.maincontent {
+    margin-top: -7.6%;
+    /* margin-top: calc(-1rem - 5.5%); */
+    display: grid;
+    grid-gap:1px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20rem 20rem 20rem;
+}
+
+.block {
+    width: 100%;
+    /* height: 10rem; */
+    /* background: lightgreen; */
+    background: url(https://api.paradiso.nl/img/events/Maren-Morris-web.jpg?w=1368&h=1340&fit=crop-56-28);
+    background-size: cover;
+    background-position: center center;
+}
