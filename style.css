@@ -18,7 +18,7 @@ body {
 .container {
     margin-top: 10rem;
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 1fr 8fr 1fr;
     
 }
 
@@ -34,6 +34,7 @@ body {
     min-width: 100%;
     position: relative;
     z-index: 2;
+    margin: 0 0 -7.5% 0;
 }
 
 .text {
@@ -44,19 +45,59 @@ body {
 }
 
 .maincontent {
-    margin-top: -7.6%;
+    /* margin-top: -7.6%; */
     /* margin-top: calc(-1rem - 5.5%); */
     display: grid;
     grid-gap:1px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 20rem 20rem 20rem;
+    grid-template-areas: 
+    "hero hero side1"
+    "hero hero side2"
+    "bottom1 bottom2 side2"
+
 }
 
 .block {
     width: 100%;
     /* height: 10rem; */
     /* background: lightgreen; */
+    
+}
+
+.block-hero {
     background: url(https://api.paradiso.nl/img/events/Maren-Morris-web.jpg?w=1368&h=1340&fit=crop-56-28);
+    grid-area: hero;
+    background-size: cover;
+    background-position: center center;
+}
+
+.block-side1 {
+    background: url(https://api.paradiso.nl/img/events/fatal.jpg?w=848&h=808&fit=crop-42-58);
+    grid-area: side1;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.block-side2 {
+    background: url(https://api.paradiso.nl/img/events/Betty-Wright.jpg?w=848&h=1456&fit=crop-63-38);
+    grid-area: side2;
+    background-size: cover;
+    background-position: center center;
+}
+
+.block-bottom1 {
+    background: url(https://api.paradiso.nl/img/events/milk.jpg?w=848&h=808&fit=crop-50-4);
+    grid-area: bottom1;
+    background-size: cover;
+   
+    background-position: center center;
+}
+
+.block-bottom2 {
+    background: url(https://api.paradiso.nl/img/events/Schermafbeelding-2019-01-17-om-08.41.31.png?w=848&h=808&fit=crop-42-22);
+    grid-area: bottom2;
     background-size: cover;
     background-position: center center;
 }
