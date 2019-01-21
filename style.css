@@ -434,6 +434,7 @@ input[type=checkbox] {
     color: white;
     margin-top:8rem;
     margin-bottom: 0;
+    margin-left: 0;
     
 }
 
@@ -517,6 +518,10 @@ input[type=checkbox] {
 }
     .maincontent.today {
         margin-top: 5rem;
+    }
+
+    .maincontent img {
+        min-width: 100%;
     }
 
 .title-bg {
