@@ -63,6 +63,49 @@ body {
     margin-right: .5rem;
 }
 
+label {
+    cursor: pointer;
+}
+
+.mobile-menu {
+    /* display: none; */
+    position: absolute;
+    height: 0;
+    width: 100vw;
+    top: 12vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    background: white;
+    z-index: 9999;
+    transition: height ease 1s;
+}
+
+.mobile-menu ul {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity ease 1s;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+ /* Toggled State */
+input[type=checkbox]:checked ~ .mobile-menu {
+    height: 200vh;
+
+} 
+
+input[type=checkbox]:checked ~ .mobile-menu ul {
+    opacity: 1;
+    pointer-events: all;
+
+} 
+
+
+
 
 .content {
     grid-column: 2;
@@ -83,10 +126,7 @@ body {
 
 .maincontent {
     position: relative;
-    /* margin-top: -7.6%; */
-    /* margin-top: calc(-1rem - 5.5%); */
     display: grid;
-    /* grid-gap:1px; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 
