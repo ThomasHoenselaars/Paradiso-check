@@ -474,6 +474,10 @@ input[type=checkbox] {
 
     }
 
+    .searchbar {
+        font-size: 1rem;
+    }
+
     .submenu {
         display: flex;
         flex-flow: column;
