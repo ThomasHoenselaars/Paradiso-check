@@ -63,6 +63,8 @@ body {
     margin-right: .5rem;
 }
 
+/* DROPDOWN MENU */
+
 label {
     cursor: pointer;
 }
@@ -71,6 +73,7 @@ label {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
     align-content: start;
+    
  
 }
 
@@ -87,18 +90,20 @@ label {
     background: white;
     z-index: 9999;
     transition: height ease 1s;
+    
 }
 
 .menu-wrapper {
     height: 100vh;
+  
 }
 
 .mobile-menu .menu-wrapper {
-    margin-top: -.3rem;
+    margin-top: 0rem;
     grid-column: 2;
     opacity: 0;
     pointer-events: none;
-    transition: opacity ease-in-out 1s;
+    transition: opacity ease-in-out .5s;
 }
 
 p.dropdown {
@@ -118,10 +123,93 @@ input[type=checkbox]:checked ~ .mobile-menu {
 input[type=checkbox]:checked ~ .mobile-menu .menu-wrapper {
     opacity: 1;
     pointer-events: all;
-
 } 
 
 
+.dropdown-link-bg {
+    font-size: 4rem;
+    font-weight: 800;
+    color: black;
+}
+
+.dropdown-bg li:first-child {
+    text-decoration: underline;
+}
+
+/* SUB MENU MET SLIDE UNDERLINE */
+
+.submenu {
+    display: flex;
+    margin-top: 5rem;
+    
+}
+
+    .side-menu {
+        margin-right: 10rem;
+        position: relative;
+    }
+
+    .side-menu li {
+        padding: 1rem;
+    }
+
+    .side-menu a {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: .1rem;
+    }
+
+    .side-menu a:after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid black;
+        width: 0;
+        position: absolute;
+        left: 1rem;
+        transition: 1s ease;
+    }
+
+    .side-menu a:hover:after { 
+        width: 90%; 
+    }
+ /* SUB MENU MET SLIDE UNDERLINE END */
+
+.socialmedia-nav {
+    display: flex;
+    margin-top: 2rem;
+}
+
+    .socialmedia-nav li {
+        margin: 1rem;
+    }
+
+    .socialmedia-nav .twitter {
+        background: url(https://www.pathe.nl/assets/img/icons/social/twitter@2x.png);
+        background-size: cover;
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+
+    .socialmedia-nav .fb {
+        background: url(https://www.pathe.nl/assets/img/icons/social/facebook@2x.png);
+        background-size: cover;
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+
+    .socialmedia-nav .insta {
+        background: url(https://www.pathe.nl/assets/img/icons/social/instagram@2x.png);
+        background-size: cover;
+        display: block;
+        height: 30px;
+        width: 30px;
+    }
+
+
+/* DROPDOWN MENU END */
 
 
 .content {
@@ -302,13 +390,42 @@ input[type=checkbox]:checked ~ .mobile-menu .menu-wrapper {
     }
 
     .mobile-menu .menu-wrapper {
-        margin-top: -.3rem;
+        margin-top: 0rem;
         grid-column: 2;
         opacity: 0;
         pointer-events: none;
         transition: opacity ease-in-out 1s;
 
     }
+
+    .submenu {
+        display: flex;
+        flex-flow: column;
+        margin-top: 5rem;
+        
+    }
+        .side-menu li {
+            padding: .2rem;
+        }
+
+            .side-menu {
+                margin-bottom: 2rem;
+                width: 100%;
+            }
+
+                .side-menu a:after {
+                    content: '';
+                    display: block;
+                    border-bottom: 3px solid black;
+                    width: 0;
+                    position: absolute;
+                    left: 0;
+                    transition: 1s ease;
+                }
+            
+                .side-menu a:hover:after { 
+                    width: 14rem; 
+                }
 
     .maincontent {
         display: flex;
