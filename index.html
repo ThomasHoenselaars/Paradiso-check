@@ -30,7 +30,7 @@
                         <p>Menu</p>
                     </label>
                 </li>
-                <li><a class="nav-link" href="#">
+                <li> <label for="toggle-2" class="nav-link">
                             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 224 224" style=" fill:#000000;">
                                 <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
                                     stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
@@ -44,11 +44,11 @@
                                 </g>
                             </svg>
                             <p>Zoeken</p>
-                            </a>
+                        </label>
                         </li>
                 </ul>
             <ul class="nav-right">
-                <li><a class="nav-link" href="#">Programme</a></li>
+                <li><a class="nav-link" href="#">Programma</a></li>
             </ul>
             <input type="checkbox" id="toggle-1">
             <section class="mobile-menu container-menu">
@@ -111,8 +111,40 @@
                         </ul>
                     </section>
                     </div>
-                    </section>
-        
+            </section>
+
+            <!-- SEARCH WRAPPER -->
+            <div class="search-wrapper">
+                <input type="checkbox" id="toggle-2">
+                <section class="mobile-menu container-menu search-menu">
+                        <div class="menu-wrapper menu-wrapper-search">
+                                <ul class="nav-left">
+                                        <li><label for="toggle-2" class="nav-link">
+                                                <svg class="searchsvg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 224 224" style=" fill:#000000;">
+                                                    <g transform="">
+                                                        <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter"
+                                                            stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
+                                                            font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+                                                            <path d="M0,224v-224h224v224z" fill="none"></path>
+                                                            <g id="original-icon" fill="#ffffff">
+                                                                <g id="surface1">
+                                                                    <path d="M50.53125,40.46875l-10.0625,10.0625l61.46875,61.46875l-61.46875,61.46875l10.0625,10.0625l61.46875,-61.46875l61.46875,61.46875l10.0625,-10.0625l-61.46875,-61.46875l61.46875,-61.46875l-10.0625,-10.0625l-61.46875,61.46875z"></path>
+                                                                </g>
+                                                            </g>
+                                                            <path d="M0,224v-224h224v224z" fill="none"></path>
+                                                            <path d="M4.48,219.52v-215.04h215.04v215.04z" fill="none"></path>
+                                                            <path d="" fill="none"></path>
+                                                            <path d="" fill="none"></path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </label>
+                                        </li>
+                                </ul>
+                                <input class="searchbar" type="text" name="searchbar" id="#" placeholder="Zoek op evenement of artiest">
+                        </div>
+                </section>
+            </div>
         </nav>
     </header>
     <div class="container">
@@ -190,7 +222,49 @@
                 </div>
                 <div class="layer"></div>
             </div>
-
+        
+            <h1 class="title-bg">Programma</h1>
+            <h3 class="sub-title-sm">Vandaag</h3>
+            <div class="maincontent today">
+                    <div class="block">
+                            
+                        <a href="#" class="block-link">
+                                
+                                <img class="block-img" src="https://api.paradiso.nl/img/events/radkey2.jpg?w=684&h=670&fit=crop-56-32" alt="">
+                                
+                        </a>
+                        <hgroup class="block-description block-today">  
+                                <h3 class="subtitle-today">Radkey</h3>
+                                    <p class="block-p">in Paradiso</p>
+                                    <p class="block-p">Aanvang 20:00</p>                        
+                            </hgroup>
+                    </div>
+                    <div class="block"> 
+                        <a href="#" class="block-link">
+                            
+                                <img class="block-img" src="https://api.paradiso.nl/img/events/header-distraction-by-design.jpg?w=684&h=670&fit=crop-52-50" alt="">
+                                
+                            
+                        </a>
+                        <hgroup class="block-description block-today">
+                                    <h3 class="subtitle-today">Radkey</h3>
+                                    <p class="block-p">in Paradiso</p>
+                                    <p class="block-p">Aanvang 20:00</p>
+                                </hgroup>
+                    </div>
+                    <div class="block">
+                        <a href="#" class="block-link">
+                            
+                                <img class="block-img" src="https://api.paradiso.nl/img/events/lorelles-meets-the-obese.jpg?w=684&h=670&fit=crop-69-19"
+                                    alt="">
+                                
+                        </a>
+                        <hgroup class="block-description block-today">
+                                <h3 class="subtitle-today">Radkey</h3>
+                                    <p class="block-p">in Paradiso</p>
+                                    <p class="block-p">Aanvang 20:00</p>
+                            </hgroup>
+                    </div>
         </div>
 
     </div>

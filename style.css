@@ -45,6 +45,7 @@ body {
     display: flex;
     padding: 2rem 0;
     align-items: center;
+   
 }
 
 .nav-left li {
@@ -93,9 +94,47 @@ label {
     
 }
 
+/* SEARCH BAR FOLDOUT */
+
+.mobile-menu.search-menu {
+    background: #4f0053;
+}
+    .searchsvg {
+        margin-top: 1rem;
+        align-self: center;
+    }
+
+        .searchbar {
+            align-self: center;
+            
+            width: 100%;
+            height: 3.5rem;
+            font-weight: 100;
+            font-size: 3rem;
+            font-style: normal;
+            background: 0 0;
+            border: 0;
+            border-bottom: 2px solid #fff;
+            border-radius: 0;
+            box-shadow: 0 0 0;
+            color: #fff;
+        }
+
+        .searchbar:focus {
+                outline:none;
+            }
+        }
+
+/* SEARCH BAR FOLDOUT END */
+
 .menu-wrapper {
     height: 100vh;
   
+}
+
+.menu-wrapper.menu-wrapper-search {
+    display: flex;
+    align-items: flex-start;
 }
 
 .mobile-menu .menu-wrapper {
@@ -115,15 +154,21 @@ input[type=checkbox] {
 }
 
  /* Toggled State */
-input[type=checkbox]:checked ~ .mobile-menu {
+.navigation input[type=checkbox]:checked ~ .mobile-menu {
     height: 200vh;
 
 } 
 
-input[type=checkbox]:checked ~ .mobile-menu .menu-wrapper {
+.navigation input[type=checkbox]:checked ~ .mobile-menu .menu-wrapper {
     opacity: 1;
     pointer-events: all;
 } 
+
+.search-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 
 .dropdown-link-bg {
@@ -240,6 +285,20 @@ input[type=checkbox]:checked ~ .mobile-menu .menu-wrapper {
     "bottom1 bottom2 side2";
 
 }
+
+.maincontent.today {
+    grid-template-rows: auto;
+    
+}
+
+    .subtitle-today {
+        margin-bottom:-.5rem;
+        font-size: 1.4rem;
+    }
+    .block-p {
+        margin-bottom:-.5rem;
+    }
+
 
 
 .block {
@@ -366,6 +425,23 @@ input[type=checkbox]:checked ~ .mobile-menu .menu-wrapper {
     display: block;
 }
 
+/* PROGRAMMA */
+
+
+
+.title-bg {
+    font-size: 8rem;
+    color: white;
+    margin-top:8rem;
+    margin-bottom: 0;
+    
+}
+
+    .sub-title-sm {
+        color: white;
+      
+    }
+
 
 @media screen and (max-width: 875px) {
     .container { 
@@ -385,8 +461,8 @@ input[type=checkbox]:checked ~ .mobile-menu .menu-wrapper {
     }
 
     .nav-left {
-
-        padding: 0;
+        /* padding: 0; */
+        justify-content: space-between;
     }
 
     .mobile-menu .menu-wrapper {
@@ -435,6 +511,17 @@ input[type=checkbox]:checked ~ .mobile-menu .menu-wrapper {
     .maincontent .block:nth-child(n+2) { 
         display: none;
 }
+    .maincontent.today {
+        margin-top: 5rem;
+    }
 
+.title-bg {
+    display: none;
+}
+
+.sub-title-sm {
+    display: none;
+  
+}
     
 }
